@@ -1,0 +1,104 @@
+.titulo {
+  text-align: center;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.principal {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fecha {
+  text-align: center;
+  width: 100px;
+}
+
+.col-auto {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.col-form-label {
+  padding-right: 10px;
+}
+
+.titulo-analisis {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.consultar {
+  padding-top: 30px;
+}
+
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardOficial {
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.cardEspecial {
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.cardJoven {
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.rowChartJornada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hapsa-img {
+  height: -webkit-fill-available;
+}
+
+.hapsa {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.solid {
+  margin-top: 100px;
+  border-top: 3px solid #bbb;
+}
+
+.titulo-actual {
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */

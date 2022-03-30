@@ -1,0 +1,80 @@
+
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    padding-top: 50px;
+    
+}
+
+.principal {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.fecha {
+    text-align: center;
+    width: 100px;
+}
+
+.col-auto{
+    align-self: flex-end;
+}
+
+.col-form-label{
+    padding-right: 10px;
+}
+
+.titulo-analisis {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.consultar {
+    padding-top: 30px;
+    
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+
+}
+
+.cardOficial {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cardEspecial {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cardJoven {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.rowChartJornada {
+    display: flex;
+    justify-content: space-around
+}
+
+.chartPie {
+
+}
+
+.chartBar {
+
+}
+
+
