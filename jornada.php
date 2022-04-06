@@ -4,7 +4,7 @@
 
 <div class="container">
     <h1 class="titulo">Consulta de jornada</h1>
-    <section class="container principal">
+    <section class="container principal" style="width: 640px;">
         <form class="row g-2">
 
             <div class="col-auto fecha">
@@ -156,10 +156,10 @@
 <!-- /.container-fluid -->
 
  <!-- Content Row -->
-<div class="rowChartJornada">
+<div class="rowChartJornada" id="rowChartJornada">
 
-    <!-- Donut Chart -->
-    <div class="col-xl-4 col-lg-5">
+    <!-- bar Chart -->
+    <div class="col-xl-4 col-lg-5 bar" id="bar">
         <div class="card shadow mb-4">
             <!-- Card Header - Dropdown -->
             <div class="card-header py-3">
@@ -176,8 +176,8 @@
     </div>
 
     <!-- Donut Chart -->
-    <div class="col-xl-4 col-lg-5">
-        <div class="card shadow mb-4">
+    <div class="col-xl-4 col-lg-5 pie">
+        <div class="card shadow mb-4" id="pie">
             <!-- Card Header - Dropdown -->
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Utilidad</h6>

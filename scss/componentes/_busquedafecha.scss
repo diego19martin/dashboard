@@ -2,9 +2,11 @@
 
 .titulo {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .container {
+
     padding-top: 50px;
     
 }
@@ -13,6 +15,10 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    padding: 34px;
+    border: 2px solid cornflowerblue;
+    border-radius: 40px;
+
 }
 
 .fecha {

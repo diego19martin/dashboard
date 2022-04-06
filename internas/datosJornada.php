@@ -1,5 +1,5 @@
 <?php
-include "../config/conexion.php";
+include "../includes/config/conexion.php";
 
 $fechaJornada=$_GET['fechaJornada'];
 

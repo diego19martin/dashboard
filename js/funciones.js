@@ -1,3 +1,5 @@
+var myChart;
+var myChart2;
 
 function consultaJornada() {
 
@@ -134,6 +136,16 @@ function consultaJornada() {
             console.log(datosOficial);
             console.log(datosEspecial);
             console.log(datosJoven);
+
+            if ($('#tableOficial').bootstrapTable()) {
+                $('#tableOficial').bootstrapTable('destroy'); //Destroy bootstrap table
+                }
+                if ($('#tableEspecial').bootstrapTable()) {
+                    $('#tableEspecial').bootstrapTable('destroy'); //Destroy bootstrap table
+                    }
+                    if ($('#tableJoven').bootstrapTable()) {
+                        $('#tableJoven').bootstrapTable('destroy'); //Destroy bootstrap table
+                        }
             
             $(function () {
                 $('#tableOficial').bootstrapTable({
@@ -214,14 +226,17 @@ function consultaJornada() {
                 totalCoinOfi = totalCoinOfi + parseFloat(datosOficial[i].CoinIn);
             }
 
-            // chartOfi(totalBeneOfi);
+            chartSala(datosOficial);
 
             datosOficial.push({Sector:'Totales', Beneficio:totalBeneOfi, CoinIn:totalCoinOfi});
             
             console.log(currency(totalBeneOfi));
             console.log(datosOficial);
             
-            
+            if ($('#tableOficial').bootstrapTable()) {
+                $('#tableOficial').bootstrapTable('destroy'); //Destroy bootstrap table
+                }
+    
             $(function () {
                 $('#tableOficial').bootstrapTable({
                     data: datosOficial
@@ -294,10 +309,14 @@ function consultaJornada() {
                 totalCoinEsp = totalCoinEsp + parseFloat(datosEspecial[i].CoinIn);
             }
 
-            // chart(totalBeneOfi, totalBeneEsp, totalBeneJoven);
+            chartSala(datosEspecial);
          
             datosEspecial.push({Sector:'Totales', Beneficio:totalBeneEsp, CoinIn:totalCoinEsp});
-                               
+                     
+            if ($('#tableEspecial').bootstrapTable()) {
+                $('#tableEspecial').bootstrapTable('destroy'); //Destroy bootstrap table
+                }
+    
             $(function () {
                 $('#tableEspecial').bootstrapTable({
                     data: datosEspecial
@@ -364,10 +383,14 @@ function consultaJornada() {
                 totalCoinJoven = totalCoinJoven + parseFloat(datosJoven[i].CoinIn);
             }
 
-            // chart(totalBeneOfi, totalBeneEsp, totalBeneJoven);
+            chartSala(datosJoven);
 
             datosJoven.push({Sector:'Totales', Beneficio:totalBeneJoven, CoinIn:totalCoinJoven});
             
+            if ($('#tableJoven').bootstrapTable()) {
+            $('#tableJoven').bootstrapTable('destroy'); //Destroy bootstrap table
+            }
+
             $(function () {
                 $('#tableJoven').bootstrapTable({
                     data: datosJoven
@@ -375,6 +398,10 @@ function consultaJornada() {
             });
         });
     }
+}
+
+function nuevaClave() {
+    
 }
 
 
